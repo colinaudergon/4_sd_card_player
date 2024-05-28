@@ -3663,22 +3663,22 @@
 				)
 			)
 		)
-		(symbol "Reference_Voltage:TL431DBZ"
-			(pin_numbers hide)
-			(pin_names hide)
+		(symbol "Reference_Voltage:LM4040DBZ-10"
+			(pin_names
+				(offset 0.0254) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at -2.54 2.54 0)
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "TL431DBZ"
-				(at 0 -2.54 0)
+			(property "Value" "LM4040DBZ-10"
+				(at 0 -3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3686,7 +3686,7 @@
 				)
 			)
 			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-				(at 0 -3.81 0)
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3695,7 +3695,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl431.pdf"
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm4040-n.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3705,7 +3705,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Shunt Regulator, SOT-23"
+			(property "Description" "10.00V Precision Micropower Shunt Voltage Reference, SOT-23"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3714,7 +3714,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "diode device shunt regulator"
+			(property "ki_keywords" "diode device voltage reference shunt"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3732,7 +3732,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "TL431DBZ_0_1"
+			(symbol "LM4040DBZ-10_0_1"
 				(polyline
 					(pts
 						(xy -1.27 0) (xy 0 0) (xy 1.27 0)
@@ -3747,22 +3747,22 @@
 				)
 				(polyline
 					(pts
-						(xy -0.762 0.762) (xy 0.762 0) (xy -0.762 -0.762)
+						(xy -1.27 -1.27) (xy 0.635 0) (xy -1.27 1.27) (xy -1.27 -1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.2032)
 						(type default)
 					)
 					(fill
-						(type outline)
+						(type none)
 					)
 				)
 				(polyline
 					(pts
-						(xy 0.508 -1.016) (xy 0.762 -0.762) (xy 0.762 0.762) (xy 0.762 0.762)
+						(xy 0 -1.27) (xy 0.635 -1.27) (xy 0.635 1.27) (xy 1.27 1.27)
 					)
 					(stroke
-						(width 0.254)
+						(width 0.2032)
 						(type default)
 					)
 					(fill
@@ -3770,9 +3770,9 @@
 					)
 				)
 			)
-			(symbol "TL431DBZ_1_1"
+			(symbol "LM4040DBZ-10_1_1"
 				(pin passive line
-					(at 2.54 0 180)
+					(at 3.81 0 180)
 					(length 2.54)
 					(name "K"
 						(effects
@@ -3790,25 +3790,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 2.54 270)
-					(length 2.54)
-					(name "REF"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 0 0)
+					(at -3.81 0 0)
 					(length 2.54)
 					(name "A"
 						(effects
@@ -3817,7 +3799,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6151,22 +6133,10 @@
 		(uuid "2a6538e0-675a-411b-9eb5-715844e405a8")
 	)
 	(junction
-		(at 26.67 240.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "306c7f50-7f14-4305-bb4e-a0709eb4dc44")
-	)
-	(junction
 		(at 100.33 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3540037c-0ff4-461c-9998-338c8e253e43")
-	)
-	(junction
-		(at 38.1 250.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3717f652-c483-482c-9910-5b0a10fa68be")
 	)
 	(junction
 		(at 280.67 30.48)
@@ -6235,6 +6205,12 @@
 		(uuid "68570efd-a85d-4fa2-87a7-3e736c856143")
 	)
 	(junction
+		(at 27.94 236.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "712c0747-0e68-425a-9804-1b90539ec364")
+	)
+	(junction
 		(at 53.34 181.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6259,12 +6235,6 @@
 		(uuid "80d4e681-0d2f-4242-95be-4a489bf4ffa8")
 	)
 	(junction
-		(at 38.1 228.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "988599b0-29ca-4ef7-bea2-bdee42be9c9a")
-	)
-	(junction
 		(at 53.34 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6275,12 +6245,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a513c56c-569e-4f04-a6a5-2d12fd242d06")
-	)
-	(junction
-		(at 55.88 250.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a93721f6-a9c1-4374-a677-c68c5154bd2b")
 	)
 	(junction
 		(at 322.58 44.45)
@@ -6365,6 +6329,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f0287e96-70f3-49bf-ba30-4fcdbb7a237c")
+	)
+	(junction
+		(at 35.56 236.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f22d8050-45a1-4a20-8581-fb5a7736f671")
 	)
 	(junction
 		(at 341.63 205.74)
@@ -6794,6 +6764,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.56 236.22) (xy 35.56 237.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18553acc-b96d-4d0f-9b0d-b3dc9f9fa85f")
+	)
+	(wire
+		(pts
 			(xy 36.83 107.95) (xy 44.45 107.95)
 		)
 		(stroke
@@ -6851,6 +6831,16 @@
 			(type default)
 		)
 		(uuid "1f0f5df6-4188-4f04-a3ab-8aa786ee3f60")
+	)
+	(wire
+		(pts
+			(xy 27.94 233.68) (xy 27.94 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2084b1a7-d6c0-4270-99b6-c3613749ad63")
 	)
 	(wire
 		(pts
@@ -6974,16 +6964,6 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 250.19) (xy 55.88 243.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ad0aca9-af5c-4fc0-84e3-2c195ee9e08a")
-	)
-	(wire
-		(pts
 			(xy 172.72 218.44) (xy 172.72 229.87)
 		)
 		(stroke
@@ -7041,16 +7021,6 @@
 			(type default)
 		)
 		(uuid "2e0403a5-bfaa-45ca-857e-c26f58fde627")
-	)
-	(wire
-		(pts
-			(xy 26.67 248.92) (xy 26.67 250.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ed35d99-c0d6-46e4-9767-d0d04e4a7ec5")
 	)
 	(wire
 		(pts
@@ -7171,6 +7141,16 @@
 			(type default)
 		)
 		(uuid "3f0843a8-4b64-44f9-b63c-fea3fc869c3b")
+	)
+	(wire
+		(pts
+			(xy 27.94 236.22) (xy 35.56 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f262f53-8bfc-4024-a5d7-12e7f3cbe67f")
 	)
 	(wire
 		(pts
@@ -7404,16 +7384,6 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 238.76) (xy 26.67 240.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57c145d9-8c44-4991-854e-c0640b71ab05")
-	)
-	(wire
-		(pts
 			(xy 36.83 130.81) (xy 44.45 130.81)
 		)
 		(stroke
@@ -7491,16 +7461,6 @@
 			(type default)
 		)
 		(uuid "5ec72281-a9b2-4b3f-9365-93eb02103815")
-	)
-	(wire
-		(pts
-			(xy 38.1 250.19) (xy 55.88 250.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "602dd3c4-4575-475f-b128-b1d95f8765fc")
 	)
 	(wire
 		(pts
@@ -7664,16 +7624,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 242.57) (xy 38.1 250.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7086a8c7-3368-40c8-b167-b30588e77eba")
-	)
-	(wire
-		(pts
 			(xy 153.67 248.92) (xy 151.13 248.92)
 		)
 		(stroke
@@ -7734,16 +7684,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 228.6) (xy 26.67 228.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75cfdeb9-4c19-4cb5-914a-c113b8831d6a")
-	)
-	(wire
-		(pts
 			(xy 153.67 212.09) (xy 151.13 212.09)
 		)
 		(stroke
@@ -7761,16 +7701,6 @@
 			(type default)
 		)
 		(uuid "76d1e454-6511-4b9b-a3f3-8c588241dd63")
-	)
-	(wire
-		(pts
-			(xy 38.1 224.79) (xy 38.1 228.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "774d3512-387e-4684-bd7b-a2c5f7e824b9")
 	)
 	(wire
 		(pts
@@ -8054,7 +7984,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 250.19) (xy 59.69 250.19)
+			(xy 35.56 236.22) (xy 39.37 236.22)
 		)
 		(stroke
 			(width 0)
@@ -8164,16 +8094,6 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 228.6) (xy 26.67 231.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9415cd16-21d8-4ab7-8711-d637cf597457")
-	)
-	(wire
-		(pts
 			(xy 172.72 229.87) (xy 168.91 229.87)
 		)
 		(stroke
@@ -8244,16 +8164,6 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 240.03) (xy 26.67 241.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d36bd28-35d4-43be-bac6-578ddb763dc6")
-	)
-	(wire
-		(pts
 			(xy 35.56 31.75) (xy 40.64 31.75)
 		)
 		(stroke
@@ -8271,16 +8181,6 @@
 			(type default)
 		)
 		(uuid "a0326a8c-e636-4202-a722-6ac329db52fa")
-	)
-	(wire
-		(pts
-			(xy 26.67 250.19) (xy 38.1 250.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a07b4f5a-1834-4d18-908f-0e169bcc6786")
 	)
 	(wire
 		(pts
@@ -8361,6 +8261,16 @@
 			(type default)
 		)
 		(uuid "a6410bf9-38cc-47a7-9d9f-e12df2f167b6")
+	)
+	(wire
+		(pts
+			(xy 27.94 236.22) (xy 27.94 237.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7adc737-8a12-4812-ba4b-df9c738715c2")
 	)
 	(wire
 		(pts
@@ -8524,16 +8434,6 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 236.22) (xy 55.88 228.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "baac2337-85fe-446d-a1a2-ed1257686731")
-	)
-	(wire
-		(pts
 			(xy 100.33 123.19) (xy 111.76 123.19)
 		)
 		(stroke
@@ -8641,16 +8541,6 @@
 			(type default)
 		)
 		(uuid "c82a448d-4a90-4f6f-9e1c-7c7242ff0a50")
-	)
-	(wire
-		(pts
-			(xy 26.67 240.03) (xy 35.56 240.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8dbb00b-d3c4-4f71-832c-806a7af4e6dc")
 	)
 	(wire
 		(pts
@@ -8862,16 +8752,6 @@
 		)
 		(uuid "dd818259-2225-4078-97c6-406735f46ae6")
 	)
-	(wire
-		(pts
-			(xy 38.1 237.49) (xy 38.1 228.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e09c6ece-07f0-441c-9409-8fbc481ef1dc")
-	)
 	(polyline
 		(pts
 			(xy 74.93 149.86) (xy 133.985 149.86)
@@ -8951,16 +8831,6 @@
 			(type default)
 		)
 		(uuid "e788bc1e-9091-4bbc-99d2-581335ab5739")
-	)
-	(wire
-		(pts
-			(xy 38.1 250.19) (xy 38.1 251.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e84ae141-5c0a-413f-90b6-988e23df81d2")
 	)
 	(wire
 		(pts
@@ -9171,16 +9041,6 @@
 			(type default)
 		)
 		(uuid "f84ca658-e5dc-4289-bb84-962961350cdc")
-	)
-	(wire
-		(pts
-			(xy 55.88 228.6) (xy 38.1 228.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fbbd48c7-4110-463b-bc1e-e102507e57be")
 	)
 	(wire
 		(pts
@@ -9449,16 +9309,6 @@
 			)
 		)
 		(uuid "ee6640e4-0a95-45bc-a293-60fdeb62f69c")
-	)
-	(text "TODO: compute current"
-		(exclude_from_sim no)
-		(at 55.118 257.048 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "ee7e2dc3-a753-40d3-a628-d480dbd93678")
 	)
 	(text "Digital Input Stage\n"
 		(exclude_from_sim no)
@@ -10243,7 +10093,7 @@
 	)
 	(global_label "-Vref"
 		(shape output)
-		(at 59.69 250.19 0)
+		(at 39.37 236.22 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10253,7 +10103,7 @@
 		)
 		(uuid "96c1cd17-6f99-49d8-9555-376cf25f9f1b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 67.9367 250.19 0)
+			(at 47.6167 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11759,6 +11609,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:-12V")
+		(at 27.94 226.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "19d67f40-0185-4b52-8745-06d226d73549")
+		(property "Reference" "#PWR066"
+			(at 27.94 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "-12V"
+			(at 28.321 221.6658 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 27.94 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "475c51e6-394a-4c63-ae30-fa615175a4bd")
+		)
+		(instances
+			(project "SD_CARD_PLAYER"
+				(path "/30b5090e-8414-4348-9984-448e8d932ed0"
+					(reference "#PWR066")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 289.56 181.61 0)
 		(unit 1)
@@ -12207,7 +12122,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8-N7_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 381 63.5 0)
 			(effects
 				(font
@@ -12532,81 +12447,6 @@
 			(project "SD_CARD_PLAYER"
 				(path "/30b5090e-8414-4348-9984-448e8d932ed0"
 					(reference "C17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Reference_Voltage:TL431DBZ")
-		(at 38.1 240.03 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "29606074-a583-4927-b118-cfe6d4d1907f")
-		(property "Reference" "U1"
-			(at 40.64 238.7599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "TL431DBZ"
-			(at 40.64 241.2999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 41.91 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tl431.pdf"
-			(at 38.1 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Shunt Regulator, SOT-23"
-			(at 38.1 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "39d6d8b4-21c7-457c-b13b-40255dd1af2d")
-		)
-		(pin "1"
-			(uuid "4d6cf6bd-e1c3-41c6-b95d-7c6148c714e9")
-		)
-		(pin "3"
-			(uuid "2090b148-60e8-42e2-bacc-f53d38948dc8")
-		)
-		(instances
-			(project "SD_CARD_PLAYER"
-				(path "/30b5090e-8414-4348-9984-448e8d932ed0"
-					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -13291,7 +13131,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 55.88 240.03 0)
+		(at 35.56 241.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13299,7 +13139,7 @@
 		(dnp no)
 		(uuid "392e1f7f-21f8-4ef8-86b0-e872d6b202c6")
 		(property "Reference" "C30"
-			(at 58.801 238.8616 0)
+			(at 38.481 240.1316 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13307,8 +13147,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF NP"
-			(at 58.801 241.173 0)
+		(property "Value" "100nF"
+			(at 38.481 242.443 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13317,7 +13157,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 56.8452 243.84 0)
+			(at 36.5252 245.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13326,7 +13166,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 55.88 240.03 0)
+			(at 35.56 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13335,7 +13175,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 55.88 240.03 0)
+			(at 35.56 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14535,6 +14375,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 35.56 245.11 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "53170328-bd77-45b1-b3d1-1cbb23e13eae")
+		(property "Reference" "#PWR054"
+			(at 35.56 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 35.56 249.936 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.56 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 35.56 245.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e82f3d08-837e-45d1-8f13-02f3e6c3e08a")
+		)
+		(instances
+			(project "SD_CARD_PLAYER"
+				(path "/30b5090e-8414-4348-9984-448e8d932ed0"
+					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "text:TEXT")
 		(at 187.96 45.72 0)
 		(unit 1)
@@ -15546,76 +15452,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 26.67 245.11 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6d018e6f-d291-4d67-8e75-25db7e913858")
-		(property "Reference" "R51"
-			(at 29.21 243.8399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2.7k"
-			(at 29.21 246.3799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 24.892 245.11 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 26.67 245.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 26.67 245.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "88e121c0-df9d-4c4a-99fd-c537be0f31c4")
-		)
-		(pin "2"
-			(uuid "24f2fecb-2005-4976-bfea-a253759ba348")
-		)
-		(instances
-			(project "SD_CARD_PLAYER"
-				(path "/30b5090e-8414-4348-9984-448e8d932ed0"
-					(reference "R51")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "text:TEXT")
 		(at 302.26 144.78 0)
 		(unit 1)
@@ -16120,7 +15956,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8-N7_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 332.74 19.05 0)
 			(effects
 				(font
@@ -16243,6 +16079,76 @@
 			(project "SD_CARD_PLAYER"
 				(path "/30b5090e-8414-4348-9984-448e8d932ed0"
 					(reference "R44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 27.94 229.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "79a2c047-2635-4d1d-aa4d-4bba90975f8e")
+		(property "Reference" "R16"
+			(at 30.48 228.5999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470"
+			(at 30.48 231.1399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 26.162 229.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 27.94 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 27.94 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "805ea0b8-d42a-4e5f-8258-e8c050a3b00f")
+		)
+		(pin "1"
+			(uuid "1e86c981-e335-4eba-abc7-83f38169a3ae")
+		)
+		(instances
+			(project "SD_CARD_PLAYER"
+				(path "/30b5090e-8414-4348-9984-448e8d932ed0"
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -17861,7 +17767,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8-N7_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 359.41 67.31 0)
 			(effects
 				(font
@@ -18251,71 +18157,6 @@
 			(project "SD_CARD_PLAYER"
 				(path "/30b5090e-8414-4348-9984-448e8d932ed0"
 					(reference "C26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:-12V")
-		(at 38.1 259.08 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9a3ff77b-d88d-4ebd-8b4e-66cfa7b49e3e")
-		(property "Reference" "#PWR054"
-			(at 38.1 261.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "-12V"
-			(at 37.719 263.4742 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 38.1 259.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 38.1 259.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 38.1 259.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "54a69bb8-5e44-4b14-a440-e7fb5e5bcf68")
-		)
-		(instances
-			(project "SD_CARD_PLAYER"
-				(path "/30b5090e-8414-4348-9984-448e8d932ed0"
-					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -19546,7 +19387,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8-N7_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 161.29 229.87 0)
 			(effects
 				(font
@@ -19698,7 +19539,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8-N7_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 198.12 248.92 0)
 			(effects
 				(font
@@ -19754,6 +19595,78 @@
 				(path "/30b5090e-8414-4348-9984-448e8d932ed0"
 					(reference "U6")
 					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Reference_Voltage:LM4040DBZ-10")
+		(at 27.94 241.3 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "be724b66-836b-40ca-92ab-5084559b1e4e")
+		(property "Reference" "U1"
+			(at 25.4 240.0299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LM4040DBZ-10"
+			(at 25.4 242.5699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 33.02 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm4040-n.pdf"
+			(at 27.94 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10.00V Precision Micropower Shunt Voltage Reference, SOT-23"
+			(at 27.94 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2ffc9cae-ef34-49eb-8b85-b12f7627d0b0")
+		)
+		(pin "1"
+			(uuid "864ad234-2de9-40b5-8c45-2b898ae395d9")
+		)
+		(instances
+			(project "SD_CARD_PLAYER"
+				(path "/30b5090e-8414-4348-9984-448e8d932ed0"
+					(reference "U1")
+					(unit 1)
 				)
 			)
 		)
@@ -19827,8 +19740,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 38.1 224.79 0)
-		(mirror x)
+		(at 27.94 245.11 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19836,7 +19749,7 @@
 		(dnp no)
 		(uuid "bf6f74a7-1f00-4836-816c-80d2080bad8a")
 		(property "Reference" "#PWR055"
-			(at 38.1 218.44 0)
+			(at 27.94 251.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19845,7 +19758,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 38.1 219.964 90)
+			(at 27.94 249.936 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19853,7 +19766,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 38.1 224.79 0)
+			(at 27.94 245.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19862,7 +19775,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 224.79 0)
+			(at 27.94 245.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19871,7 +19784,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 38.1 224.79 0)
+			(at 27.94 245.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20361,76 +20274,6 @@
 			(project "SD_CARD_PLAYER"
 				(path "/30b5090e-8414-4348-9984-448e8d932ed0"
 					(reference "#PWR040")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 26.67 234.95 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ca5923c1-d882-4111-b8bd-ec6e299d9a12")
-		(property "Reference" "R52"
-			(at 29.21 233.6799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "8.2k"
-			(at 29.21 236.2199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 24.892 234.95 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 26.67 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 26.67 234.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "be02facf-7404-4bc0-8934-b0d02af3a59b")
-		)
-		(pin "2"
-			(uuid "40eb12d9-146c-4993-b1cd-337dfc0cdce9")
-		)
-		(instances
-			(project "SD_CARD_PLAYER"
-				(path "/30b5090e-8414-4348-9984-448e8d932ed0"
-					(reference "R52")
 					(unit 1)
 				)
 			)
@@ -23165,7 +23008,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8-N7_3.9x4.9mm_P1.27mm"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 161.798 279.146 0)
 			(effects
 				(font
@@ -23488,76 +23331,6 @@
 			(project "SD_CARD_PLAYER"
 				(path "/30b5090e-8414-4348-9984-448e8d932ed0"
 					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 38.1 255.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f55f6ecc-8498-4fe0-8053-ee4d4f6134c3")
-		(property "Reference" "R50"
-			(at 40.64 253.9999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1k"
-			(at 40.64 256.5399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 36.322 255.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 38.1 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 38.1 255.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4f76f5f2-f8e2-456e-af20-ae1c9fc286db")
-		)
-		(pin "2"
-			(uuid "3ace2cbb-ee80-44b3-9025-2d3c8b6d62fe")
-		)
-		(instances
-			(project "SD_CARD_PLAYER"
-				(path "/30b5090e-8414-4348-9984-448e8d932ed0"
-					(reference "R50")
 					(unit 1)
 				)
 			)
