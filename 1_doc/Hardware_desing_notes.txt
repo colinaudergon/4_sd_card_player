@@ -1,0 +1,4 @@
+Hardware design:
+
+SD card circuit design notes:
+https://www.acmesystems.it/pcb_microsd
